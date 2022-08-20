@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 body {
@@ -10,9 +11,9 @@ body {
 }
 
 .top-container {
-    background-image: linear-gradient(rgb(10, 16, 34) 39%, rgb(10, 32, 90) 100%);
+    background-image: url('img/top-container-left.svg'), url('img/top-container-right.svg'), linear-gradient(rgb(10, 16, 34) 39%, rgb(10, 32, 90) 100%);
     background-repeat: no-repeat, no-repeat, repeat;
-    background-position: bottom left auto, bottom right auto;
+    background-position: bottom left -330px, bottom right -330px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -69,8 +70,13 @@ header>a {
     font-weight: 500;
 }
 
-header .hamburger {
+header .menu-hamburger {
     display: none;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    width: 35px;
+
 }
 
 .top-container .center-box {
@@ -109,7 +115,7 @@ header .hamburger {
     color: rgb(0, 0, 0);
     background-color: #ffffff;
     border-radius: 28px;
-    font-size: 20px;
+    font-size: 17px;
     padding: 12px 20px;
     font-weight: 500;
     text-decoration: none;
@@ -329,17 +335,60 @@ footer .footer-nav h5 {
 .footer-nav-mobile {
     display: none;
 }
+.home .media-icons {
+    margin-top: 100px;
+    z-index: 888;
+    position: absolute;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+.home .media-icons a {
+    color: rgb(75, 78, 230);
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+.home .media-icons b {
+    color: rgb(255,0,88);
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+.home .media-icons c {
+    color: #38A1F3;
+    font-size: 1.6em;
+    transition: 0.3s ease;
+}
+.home .media-icons a:not(:last-child) {
+    margin-bottom: 20px;
+}
+.home .media-icons a:hover {
+    transform: scale(1.3)
+}
+.home .media-icons b:not(:last-child) {
+    margin-bottom: 20px;
+}
+.home .media-icons b:hover {
+    transform: scale(1.3)
+}
 
+.home .media-icons c:not(:last-child) {
+    margin-bottom: 20px;
+}
+.home .media-icons c:hover {
+    transform: scale(1.3)
+}
 
 /* ---------------------------------------- Responsive Part --------------------------------------*/
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:900px) {
     * {
         margin: 0;
         padding: 0;
+        align-items: center;
     }
     .top-container {
-        background: url('img/top-container-left.svg') no-repeat, linear-gradient(rgba(42, 94, 232, 1) 39%, rgba(110, 148, 254, 1) 100%);
+        background: url('img/top-container-left.svg') no-repeat, linear-gradient(rgb(10, 16, 34) 39%, rgb(10, 32, 90) 100%);
         background-size: 150%;
         background-position: bottom right;
         display: block;
@@ -353,12 +402,26 @@ footer .footer-nav h5 {
         margin-right: 2rem;
         width: -webkit-fill-available;
     }
-    header>.center-nav {
-        display: none;
+    header .menu-hamburger {
+        display: block;
     }
-    header .hamburger {
-        width: 30px;
+    header .center-nav {
+        top: 0;
+        left: 0%;
+        position: absolute;
+        flex-direction: column;
+        background-color: rgb(255, 255, 255, 0.20);
+        backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        font-size: 1.2em;
+        margin-left: -100%;
+        transition: all 0.5s ease;
     }
+    .center-nav.mobile-menu {
+        margin-left: 0;
+    }
+
     .top-container>.center-box {
         display: block;
         text-align: left;
@@ -366,15 +429,31 @@ footer .footer-nav h5 {
         padding: 56px 24px;
     }
     .top-container>.center-box>h1 {
-        font-size: 40px;
+        font-size: 30px;
     }
     .top-container>.center-box>p {
-        font-size: 16px;
+        font-size: 14px;
         margin: 30px 0;
     }
     .top-container>.center-box>.nav-buttons button {
         display: none;
+        size: 10px;
     }
+    .top-container .center-box .nav-buttons a {
+        display: flex;
+        flex-direction: row;
+        margin: 0 8px;
+        color: rgb(0, 0, 0);
+        background-color: #ffffff;
+        border-radius: 28px;
+        font-size: 15px;
+        padding: 8px 15px;
+        font-weight: 500;
+        text-decoration: none;
+        width: auto;
+        justify-content: center;
+    }
+
     .container2 {
         display: none;
     }
@@ -490,4 +569,49 @@ footer .footer-nav h5 {
     .footer-bar {
         border-top: 1px solid #7289da;
     }
-} 
+    .home .media-icons {
+        margin-top: 100px;
+        z-index: 888;
+        position: absolute;
+        top: 280px;
+        right: 30px;
+        display: flex;
+        flex-direction: column;
+        transition: 0.5s ease;
+    }
+    .home .media-icons a {
+        color: rgb(75, 78, 230);
+        font-size: 1.6em;
+        transition: 0.3s ease;
+    }
+    .home .media-icons b {
+        color: rgb(255,0,88);
+        font-size: 1.6em;
+        transition: 0.3s ease;
+    }
+    .home .media-icons c {
+        color: #38A1F3;
+        font-size: 1.6em;
+        transition: 0.3s ease;
+    }
+    .home .media-icons a:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .home .media-icons a:hover {
+        transform: scale(1.3)
+    }
+    .home .media-icons b:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .home .media-icons b:hover {
+        transform: scale(1.3)
+    }
+    
+    .home .media-icons c:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .home .media-icons c:hover {
+        transform: scale(1.3)
+    }
+
+}
