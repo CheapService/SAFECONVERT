@@ -107,7 +107,7 @@ header .menu-hamburger {
 }
 
 .top-container .center-box>p {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgb(255, 255, 255, 0.9);
     margin: 40px auto;
 }
 
@@ -121,7 +121,7 @@ header .menu-hamburger {
     display: flex;
     flex-direction: row;
     margin: 0 8px;
-    color: rgb(0, 0, 0);
+    color: rgb(71, 111, 243);
     background-color: #ffffff;
     border-radius: 28px;
     font-size: 17px;
@@ -132,15 +132,18 @@ header .menu-hamburger {
     justify-content: center;
 }
 
-.top-container .center-box .nav-buttons button {
-    margin-right: 8px;
-    color: white;
+.top-container .center-box .nav-buttons b {
+    display: flex;
+    margin-right:0 8px;
+    color: rgb(71, 111, 243);
     background-color: #000000;
     border-radius: 28px;
-    font-size: 20px;
-    padding: 16px 32px;
+    font-size: 18px;
+    padding: 15px 20px;
     font-weight: 500;
     border: none;
+    width: auto;
+    justify-content: center;
 }
 
 .container,
