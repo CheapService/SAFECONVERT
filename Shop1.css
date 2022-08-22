@@ -1,0 +1,715 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand, sans-serif;
+  }
+  body {
+    display: flex;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100vh;
+    background: rgb(230, 230, 230);
+    display: grid;
+    place-items: center;
+  }
+  
+  .card-wrapper {
+    width: 50rem;
+    height: 70rem;
+    padding: 0 10rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .card {
+    width: 30rem;
+    height: 55rem;
+    background: #eee;
+    border-radius: 2.5rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+    position: relative;
+  }
+  
+  .card-top {
+    width: 100%;
+    height: 50%;
+    background: rgb(92, 92, 92);
+    padding: 3rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    transition: background 0.5s;
+  }
+  
+  .container.change .card-top {
+    background: #d35246;
+  }
+  
+  .logo {
+    width: 8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card-top-text {
+    color: #fff;
+  }
+  
+  .card-top-text h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .shoe-1 {
+    width: 30rem;
+    position: absolute;
+    top: -2.5rem;
+    right: -10rem;
+    transition: transform 1s;
+  }
+  
+  .container.change .shoe-1 {
+    transform: translateX(-50rem) rotateZ(45deg);
+  }
+  
+  .shoe-2 {
+    width: 33rem;
+    position: absolute;
+    top: -10rem;
+    right: -45rem;
+    transition: transform 1s;
+  }
+  
+  .container.change .shoe-2 {
+    transform: translateX(-40rem) rotateZ(-45deg);
+  }
+  
+  .card-bottom {
+    width: 100%;
+    height: 50%;
+    padding: 2rem 3rem;
+  }
+  
+  .card-bottom h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #333;
+    margin-bottom: 0.6rem;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 30rem;
+    right: 10rem;
+    width: 3.5rem;
+    height: 1.6rem;
+    background: #25d390;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  .card-bottom h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+  
+  .stars {
+    margin-bottom: 3rem;
+  }
+  
+  .stars i:last-child {
+    opacity: 0.4;
+  }
+  
+  .size {
+    margin-bottom: 3rem;
+  }
+  
+  .size h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .sizes {
+    display: flex;
+  }
+  
+  .sizes span {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+  
+  .sizes span:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    background: #25d393;
+    color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .color h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .colors {
+    display: flex;
+  }
+  
+  .color-1,
+  .color-2 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .color-1 {
+    background: #1c477a;
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.2);
+  }
+  
+  .color-2 {
+    background: #c02244;
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
+  }
+  
+  .price {
+    width: 16rem;
+    height: 4rem;
+    background: rgb(103, 102, 102);
+    color: #fff;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: -1rem;
+    bottom: 3rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s;
+  }
+  
+  .container.change .price {
+    background: #c02244;
+  }
+  
+  .price span {
+    font-size: 2rem;
+  }
+  
+  .price span:first-child {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: 1rem;
+  }
+  
+  .price span:last-child {
+    font-weight: bold;
+  }
+  .Infobtn {
+    position: absolute;
+    top: 49.15rem;
+    border-radius: 20px;
+    color: #13529e;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .btn {
+    text-decoration: none;
+  }
+  
+  /*-------------------------------2eme produits------------------------------------*/
+  
+  .container1 {
+    width: 100%;
+    height: 100vh;
+    background: rgb(230, 230, 230);
+    display: grid;
+    place-items: center;
+  }
+  
+  .card-wrapper1 {
+    width: 50rem;
+    height: 70rem;
+    padding: 0 10rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .card1 {
+    width: 30rem;
+    height: 55rem;
+    background: #eee;
+    border-radius: 2.5rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+    position: relative;
+  }
+  
+  .card-top1 {
+    width: 100%;
+    height: 50%;
+    background: rgb(53, 58, 111);
+    padding: 3rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    transition: background 0.5s;
+  }
+  
+  .container1.change .card-top1 {
+    background: #d35246;
+  }
+  
+  .logo1 {
+    width: 8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card-top-text1 {
+    color: #fff;
+  }
+  
+  .card-top-text1 h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .rtx-3060 {
+    width: 30rem;
+    position: absolute;
+    top: -2.5rem;
+    right: -10rem;
+    transition: transform 1s;
+  }
+  
+  .container1.change .rtx-3060 {
+    transform: translateX(-50rem) rotateZ(45deg);
+  }
+  
+  .shoe-2 {
+    width: 33rem;
+    position: absolute;
+    top: -10rem;
+    right: -45rem;
+    transition: transform 1s;
+  }
+  
+  .container1.change .shoe-2 {
+    transform: translateX(-40rem) rotateZ(-45deg);
+  }
+  
+  .card-bottom1 {
+    width: 100%;
+    height: 50%;
+    padding: 2rem 3rem;
+  }
+  
+  .card-bottom1 h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #333;
+    margin-bottom: 0.6rem;
+  }
+  
+  .badge1 {
+    position: absolute;
+    top: 30rem;
+    right: 8rem;
+    width: 3.5rem;
+    height: 1.6rem;
+    background: #25d390;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  .card-bottom1 h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+  
+  .stars1 {
+    margin-bottom: 3rem;
+  }
+  
+  .stars1 i:last-child {
+    opacity: 0.4;
+  }
+  
+  .size1 {
+    margin-bottom: 3rem;
+  }
+  
+  .size1 h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .sizes1 {
+    display: flex;
+  }
+  
+  .sizes1 span {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+  
+  .sizes1 span:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    background: #25d393;
+    color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .color h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .colors {
+    display: flex;
+  }
+  
+  .color-1,
+  .color-2 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .color-1 {
+    background: #1c477a;
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.2);
+  }
+  
+  .color-2 {
+    background: #c02244;
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
+  }
+  
+  .price1 {
+    width: 16rem;
+    height: 4rem;
+    background: rgb(53, 58, 111);
+    color: #fff;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: -1rem;
+    bottom: 3rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s;
+  }
+  
+  .container1.change .price {
+    background: #c02244;
+  }
+  
+  .price1 span {
+    font-size: 2rem;
+  }
+  
+  .price1 span:first-child {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: 1rem;
+  }
+  
+  .price1 span:last-child {
+    font-weight: bold;
+  }
+  .Infobtn {
+    position: absolute;
+    top: 49.15rem;
+    border-radius: 20px;
+    color: #13529e;
+    font-size: 13px;
+    text-decoration-line: none;
+    font-weight: bold;
+  }
+  .btn1 {
+    text-decoration: none;
+  }
+  
+  /*-------------------------------3eme produits------------------------------------*/
+  
+  .container2 {
+    width: 100%;
+    height: 100vh;
+    background: rgb(230, 230, 230);
+    display: grid;
+    place-items: center;
+  }
+  
+  .card-wrapper2 {
+    width: 50rem;
+    height: 70rem;
+    padding: 0 10rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .card2 {
+    width: 30rem;
+    height: 55rem;
+    background: #eee;
+    border-radius: 2.5rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+    position: relative;
+  }
+  
+  .card-top2 {
+    width: 100%;
+    height: 50%;
+    background: rgb(87, 162, 69);
+    padding: 3rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    transition: background 0.5s;
+  }
+  
+  .container2.change .card-top2 {
+    background: #d35246;
+  }
+  
+  .logo2 {
+    width: 8rem;
+    margin-bottom: 2rem;
+  }
+  
+  .card-top-text2 {
+    color: #fff;
+  }
+  
+  .card-top-text2 h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .rtx-2060 {
+    width: 30rem;
+    position: absolute;
+    top: -2.5rem;
+    right: -10rem;
+    transition: transform 1s;
+  }
+  
+  .container2.change .rtx-2060 {
+    transform: translateX(-50rem) rotateZ(45deg);
+  }
+  
+  .shoe-2 {
+    width: 33rem;
+    position: absolute;
+    top: -10rem;
+    right: -45rem;
+    transition: transform 1s;
+  }
+  
+  .container2.change .shoe-2 {
+    transform: translateX(-40rem) rotateZ(-45deg);
+  }
+  
+  .card-bottom2 {
+    width: 100%;
+    height: 50%;
+    padding: 2rem 3rem;
+  }
+  
+  .card-bottom2 h1 {
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #333;
+    margin-bottom: 0.6rem;
+  }
+  
+  .badge2 {
+    position: absolute;
+    top: 30rem;
+    right: 7rem;
+    width: 3.5rem;
+    height: 1.6rem;
+    background: #25d390;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  .card-bottom2 h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+  
+  .stars2 {
+    margin-bottom: 3rem;
+  }
+  
+  .stars2 i:last-child {
+    opacity: 0.4;
+  }
+  
+  .size2 {
+    margin-bottom: 3rem;
+  }
+  
+  .size2 h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.3rem;
+  }
+  
+  .sizes2 {
+    display: flex;
+  }
+  
+  .sizes2 span {
+    font-size: 1.3rem;
+    margin-right: 1rem;
+  }
+  
+  .sizes2 span:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    background: #25d393;
+    color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .color h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .colors {
+    display: flex;
+  }
+  
+  .color-1,
+  .color-2 {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .color-1 {
+    background: #1c477a;
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.2);
+  }
+  
+  .color-2 {
+    background: #c02244;
+    box-shadow: 0 1rem 2rem rgba(192, 34, 68, 0.3);
+  }
+  
+  .price2 {
+    width: 16rem;
+    height: 4rem;
+    background: rgb(87, 162, 69);
+    color: #fff;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: -1rem;
+    bottom: 3rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s;
+  }
+  
+  .container1.change .price {
+    background: #c02244;
+  }
+  
+  .price2 span {
+    font-size: 2rem;
+  }
+  
+  .price2 span:first-child {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-right: 1rem;
+  }
+  
+  .price2 span:last-child {
+    font-weight: bold;
+  }
+  .Infobtn {
+    position: absolute;
+    top: 49.15rem;
+    border-radius: 20px;
+    color: #13529e;
+    font-size: 13px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .btn2 {
+    text-decoration: none;
+  }
+  @media screen and (max-width:900px) {
+    .container{
+    display: column;
+   }
+  }
