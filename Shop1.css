@@ -709,7 +709,16 @@
     text-decoration: none;
   }
   @media screen and (max-width:900px) {
-    .container{
+    .container.card-wrapper {
     display: column;
    }
   }
+
+  /*----------------------------------menu nav-------------------------------------------*/
+
+  .Logo {
+    width: 124px;
+    height:70px;
+    padding-left: 70px;
+    margin-top: 60px;
+}
