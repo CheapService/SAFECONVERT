@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+
+* {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: Quicksand, sans-serif;
+}
+
 .Logo {
     color: rgb(255, 255, 255);
     font-weight: bolder;
@@ -97,185 +105,62 @@ header .menu-hamburger {
     width: 35px;
 
 }
-/*-----------------------------------------------------------product card----------------------------------------------------------*/
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Quicksand, sans-serif;
-}
-html {
-    font-size: 62.5%;
-}
-.container {
-    width: 100%;
-    height: 100%;
-    background: rgb(210, 208, 208);
-    display: grid;
-    place-items: center;
-}
+/*------------------------------------------------------------------- Product Card----------------------------------------------------------*/
 
-.card-wrapper {
-    width: 50rem;
-    height: 70rem;
-    padding: 0 10rem;
-    display: grid;
-    place-items: center;
-}
-.card {
-    width: 30rem;
-    height: 55rem;
-    background: #eee;
-    border-radius: 2.5rem;
-    box-shadow: 0 2rem 6rem rgba(0, 0, 0, .7);
-}
-
-.card-top {
-    width: 100%;
-    height: 50%;
-    background: #f1ae04;
-    padding: 3rem;
-    border-radius: 2.5rem 2.5rem 0 0;
-}
-
-.logo {
-    width: 8rem;
-    margin-bottom: 2rem;
-}
-
-.card-top-text {
-    color: #fff;
-}
-
-.card-top-text h1 {
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-bottom: 1rem;
-}
-
-.card-bottom {
-    width: 100%;
-    height: 50%;
-    padding: 2rem 3rem;
-}
-
-.card-bottom h1 {
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    color: #333;
-    margin-bottom: 0.6rem;
-}
-
-.badge {
-    position: absolute;
-    top: 100.1rem;
-    right: 88rem;
-    width: 3.5rem;
-    height: 1.6rem;
-    background: #25d390;
-    color: #fff;
-    display: grid;
-    place-items: center;
-    border-radius: 0.3rem;
-    font-size: 0.9rem;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
-    text-transform: uppercase;
-}
-
-.card-bottom h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    margin-bottom: 0.6rem;
-}
-
-.stars {
-    margin-bottom: 3rem;
-}
-
-.stars i:last-child {
-    opacity: 0.4;
-}
-
-.size {
-    margin-bottom: 3rem;
-}
-
-.size h4 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-bottom: 1.3rem;
-}
-
-.sizes {
+.main{
+    margin: 20px;
+    margin-top: 80px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+  
+  /* Toutes les cartes */
+  .cards{
+    display:flex;
+    flex-wrap:wrap;
+  }
+  .cards .card{
+    margin-right: 20px;
+    cursor:pointer;
+  }
+  .cards .card img{
+    width: 600px;
+  }
+  .cards .card .card-header{
     display: flex;
-}
+    flex-wrap:wrap;
+    justify-content: space-between;
+  }
+  .cards .card .card-body p{
+    margin-top: 10px;
+  }
 
-.sizes span {
-    font-size: 1.3rem;
-    margin-right: 2.5rem;
-}
+  /* Fin de toutes les cartes */
 
-.sizes span:nth-child(1) {
-    width: 2rem;
-    height: 2rem;
-    background: #25d390;
-    color: #fff;
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-}
 
-.color h4 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    margin-bottom: 1rem;
 
-}
 
-.price {
-    width: 15rem;
-    height: 4rem;
-    background: #1c477a;
-    color: #fff;
-    border-radius: 0.5rem;
-    position: absolute;
-    right: 79.3rem;
-    bottom: -22rem;
-    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.price span {
-    font-size: 2rem;
-}
 
-.price span:first-child {
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-right: 1rem;
-}
 
-.price span:last-child {
-    font-weight: bold;
-}
 
-.Infobtn a {
-    position: absolute;
-    top: 119.8rem;
-    border-radius: 20px;
-    color: #13529e;
-    font-size: 13px;
-    text-decoration-line: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------------------------------------------------mobile responsive----------------------------------------------------------*/
 
