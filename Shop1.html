@@ -5,9 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Shop1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/cf41afc1b2.js" crossorigin="anonymous"></script>
-  <title>Document</title>
+  <title>Shop | Vente et Conversion</title>
 </head>
 <body>
   
@@ -18,7 +22,7 @@
         </div>
         <div class="center-nav">
             <a href="index.html">Accueil</a>
-            <a href="#">Shop1</a>
+            <a href="#">Shop</a>
             <a href="conversionPay.html">Conversion Paysafecard</a>
             <a href="#">Conversion Amazon</a>
         </div>
@@ -26,5 +30,65 @@
     </header> 
  </div>
 
+ <div class="container">
+  <div class="card-wrapper">
+    <div class="card">
+      <div class="card-top">
+        <img src="img/nvidia geforce now logo" class="logo" />
+        <div class="card-top-text">
+          <h1>Air Structure</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
+            quasi ratione praesentium eum commodi modi neque dignissimos
+            eligendi illo officiis!
+          </p>
+        </div>
+      </div>
+      <div class="card-bottom">
+        <h1>RTX 3060ti FE</h1>
+        <div class="badge">New</div>
+        <h3>ETAT: neuf</h3>
+  
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="size">
+          <h4>Stocks</h4>
+          <div class="sizes">
+            <span>∞</span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="Infobtn">
+          <a href="index.html">plus d'info →</a>
+        </div>
+        <div class="price">
+          <span>EUR</span>
+          <span>350.00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+ <script src="script.js"></script>
+
 </body>
+
+<script>
+  const menuhamburger = document.querySelector(".menu-hamburger")
+  const centernav = document.querySelector(".center-nav")
+
+  menuhamburger.addEventListener('click',()=>{
+      centernav.classList.toggle('mobile-menu')
+  })
+</script>
+
 </html>
