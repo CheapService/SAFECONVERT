@@ -1,9 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
 <?php 
     require_once(__DIR__ . '/vendor/autoload.php');
     use \Mailjet\Resources;
-    define('API_PUBLIC_KEY', 'YOUR_KEY');
-    define('API_PRIVATE_KEY', 'YOUR_KEY');
-    $mj = new \Mailjet\Client(API_PUBLIC_KEY, API_PRIVATE_KEY,true,['version' => 'v3.1']);
+    $mj = new \Mailjet\Client('5e05ad75dff1d6631922a9300df1ca5','16f4047850e6e0d8ffe9489e4f6f0b1f',true,['version' => 'v3.1']);
 
 
     if(!empty($_POST['surname']) && !empty($_POST['firstname']) && !empty($_POST['email']) && !empty($_POST['message'])){
@@ -45,3 +55,7 @@
         header('Location: index.php');
         die();
     }
+    ?>
+
+</html>
+
