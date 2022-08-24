@@ -18,13 +18,29 @@
             <div class="Logo">
                 <a><i class="fa-solid fa-shield"></i>SAFECONVERT</a>
                 </div>
-            <div class="center-nav">
-                <a href="#">Accueil</a>
-                <a href="Shop1.html">Shop</a>
-                <a href="conversionPay.html">Conversion Paysafecard</a>
-                <a href="#">Conversion Amazon</a>
-            </div>
-            <img src="img/hamburger.svg" alt="menu-mobile" class="menu-hamburger">
+
+                <nav class="navbar">
+                    <ul class="nav-menu">
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Conversion Paysafcard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-links">Conversion Amazon</a>
+                        </li>
+                    </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                </nav>
+                
         </header>
 
             <section class="home">
@@ -112,13 +128,6 @@
     </script>
 </body>
 
-<script>
-    const menuhamburger = document.querySelector(".menu-hamburger")
-    const centernav = document.querySelector(".center-nav")
-
-    menuhamburger.addEventListener('click',()=>{
-        centernav.classList.toggle('mobile-menu')
-    })
-</script>
+<script src="script.js"></script>
 
 </html>
