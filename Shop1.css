@@ -281,8 +281,8 @@ header .nav-menu a {
 
 @media screen and (max-width:900px) {
     .top-container {
-        background-image: url('img/RTX\ shop.jpg'), linear-gradient(rgb(10, 16, 34) 39%, rgb(10, 32, 90) 100%);
-        background-position: left;
+        background-image: url('img/Rtx1\ mobile.jpg'), linear-gradient(rgb(10, 16, 34) 39%, rgb(10, 32, 90) 100%);
+        background-position: center;
         justify-content: center;
         align-items: center;
         z-index: -10;
@@ -387,7 +387,7 @@ header .nav-menu a {
         text-shadow: 0 2rem 6rem rgba(0, 0, 0, .7);
       }
       .cards .card .Stocks{
-        margin-top: 10vh;
+        margin-top: 1vh;
         max-width: 15rem;
       }
     
@@ -396,25 +396,34 @@ header .nav-menu a {
       }
       .Stocks span {
        margin-left: 2vh;
-       font-size: 16px;
+       font-size: 10px;
        margin-top: -1vh;
        font-weight: bold;
       }
       .Stocks span:nth-child(2){
         color: #0ac419;
         margin-left: 5px;
-      }
-      .Buy {
-        margin-left: 30vh;
-        margin-top: 20px;
-        background-color: #23272a;
-        text-decoration: none;
-        border-radius: 10px;
-        color: #fff;
-        font-size: 15px;
+        font-size: 12px;
       }
 
-      .bottom {
+      button {
         border: 0;
+        background: #c4990a;
+        margin-left: 22vh;
+        margin-top: 13vh;
+        position: relative;
+        height: 30px;
+        width: 195px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        letter-spacing: 0.1rem;
+        align-items: center;
+        justify-content: center;
       }
+
+      .fa-credit-card {
+        margin: 4px;
+      }
+    
 }
