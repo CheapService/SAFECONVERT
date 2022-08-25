@@ -149,7 +149,7 @@ header .nav-menu a {
     flex-wrap:wrap;
   }
   .cards .card{
-    margin-right: 35px;
+    margin-right: 5px;
     cursor:pointer;
   }
   .cards .card img{
@@ -236,7 +236,7 @@ header .nav-menu a {
         padding: 0;
         top: -30px;
         display: block;
-        height: 35vh;
+        height: 40vh;
     }
 
     .nav-item{
@@ -341,7 +341,7 @@ header .nav-menu a {
         padding: 0;
         top: -30px;
         display: block;
-        height: 35vh;
+        height: 50vh;
     }
 
     .nav-item{
@@ -350,7 +350,8 @@ header .nav-menu a {
     .cards .card img{
         width: 350px;
         border-radius: 20px;
-        margin-left: 0.3vh;
+        margin-left: 0.1vh;
+        margin-top: 0;
       }
     .card-body{
         color: #23272a;
@@ -360,13 +361,60 @@ header .nav-menu a {
     
     .card {
         width: 22rem;
-        height: 33rem;
+        height: 25rem;
         background-color: #d3d3d3;
         border-radius: 20px;
         margin: 40px;
+        box-shadow: 0 2rem 6rem rgba(0, 0, 0, .7);
     }
     .cards .card{
         margin-right: 35px;
         cursor:pointer;
+      }
+      .cards .card .card-header{
+        display: flex;
+        flex-wrap:wrap;
+        margin: -5px;
+        margin-left: 2vh;
+      }
+      .cards .card .card-header .price{
+        display: grid;
+        flex-wrap:wrap;
+        margin: -5px;
+        margin-right: 2vh;
+        border-radius: 5px;
+        font-size: 20px;
+        text-shadow: 0 2rem 6rem rgba(0, 0, 0, .7);
+      }
+      .cards .card .Stocks{
+        margin-top: 10vh;
+        max-width: 15rem;
+      }
+    
+      .card-body p{
+        margin-left: 78px;
+      }
+      .Stocks span {
+       margin-left: 2vh;
+       font-size: 16px;
+       margin-top: -1vh;
+       font-weight: bold;
+      }
+      .Stocks span:nth-child(2){
+        color: #0ac419;
+        margin-left: 5px;
+      }
+      .Buy {
+        margin-left: 30vh;
+        margin-top: 20px;
+        background-color: #23272a;
+        text-decoration: none;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 15px;
+      }
+
+      .bottom {
+        border: 0;
       }
 }
