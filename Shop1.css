@@ -456,11 +456,11 @@ header .nav-menu a {
       button {
         border: 0;
         background: #c4990a;
-        margin-left: 22vh;
+        margin-left: 32vh;
         margin-top: 12vh;
         position: relative;
-        height: 30px;
-        width: 195px;
+        height: 25px;
+        width: 120px;
         border-radius: 10px;
         color: white;
         font-weight: bold;
